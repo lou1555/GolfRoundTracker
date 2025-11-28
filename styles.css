@@ -46,9 +46,12 @@ a {
 .score-container-score,
 .score-container-table,
 .add-round__submit-round-button,
-.add-round__date-input {
+.add-round__date-input,
+.player-name-inputs,
+.match-play {
   display: none;
 }
+
 h1 {
   text-align: center;
 }
@@ -93,4 +96,45 @@ h1 {
   color: black;
   border-radius: 2rem;
   margin-top: 2rem;
+}
+
+.player-name-inputs {
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.player-name-inputs label {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  gap: 0.25rem;
+}
+
+.player-name-input {
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.player-score {
+  margin: 0.25rem 0;
+}
+
+.score-container-score {
+  text-align: center;
+}
+
+.match-play {
+  margin: 0.75rem 0 0.25rem;
+  text-align: center;
+}
+
+.match-play__label {
+  font-weight: 600;
+}
+
+.match-play__status {
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
 }

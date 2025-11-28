@@ -23,16 +23,54 @@
             <h1 class="add-round__header">Track Your Rounds.</h1>
             <button class="add-round__add-round-button">Add a round</button>
             <select class="add-round__dropdown"></select>
+            <div class="player-name-inputs">
+              <label>
+                Player 1 Name
+                <input
+                  type="text"
+                  class="player-name-input player1-name"
+                  placeholder="Player 1"
+                />
+              </label>
+              <label>
+                Player 2 Name
+                <input
+                  type="text"
+                  class="player-name-input player2-name"
+                  placeholder="Player 2"
+                />
+              </label>
+            </div>
             <input type="date" class="add-round__date-input" />
             <div class="score-container-score">
-              UserScore:<span class="score-container-currentscore"></span>
+              <div class="player-score" data-player="player1">
+                Player 1 Score to Par:
+                <span
+                  class="score-container-currentscore"
+                  data-player="player1"
+                ></span>
+              </div>
+              <div class="player-score" data-player="player2">
+                Player 2 Score to Par:
+                <span
+                  class="score-container-currentscore"
+                  data-player="player2"
+                ></span>
+              </div>
+            </div>
+            <div class="match-play">
+              <div class="match-play__label">Match Play:</div>
+              <div class="match-play__status">
+                <span class="match-play__text">All square</span>
+              </div>
             </div>
             <table class="score-container-table">
               <thead>
                 <tr>
                   <th>Hole Number</th>
                   <th>Par</th>
-                  <th>Score</th>
+                  <th>Score - Player 1</th>
+                  <th>Score - Player 2</th>
                 </tr>
               </thead>
               <tbody></tbody>
